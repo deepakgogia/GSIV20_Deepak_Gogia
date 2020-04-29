@@ -25,3 +25,21 @@ export const getCreditDetail = val => ({
     payload: val
 })
 
+export const getUpcomingMoviesData = () => {
+    return function (dispatch) {
+        return getUpcomingMovies()
+            .then(data => {
+                dispatch(getMovieData(data));
+            })
+    }
+}
+
+
+export const searchMoviesData = (qry) => {
+    return function (dispatch) {
+        return findMovieData(qry)
+            .then(data => {
+                dispatch(searchByData(data));
+            })
+    }
+}

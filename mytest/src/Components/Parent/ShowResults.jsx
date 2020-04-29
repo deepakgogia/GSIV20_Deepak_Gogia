@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../../styles/showResults.css';
 export class ShowResults extends Component {
 
     state = {

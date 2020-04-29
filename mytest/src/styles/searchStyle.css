@@ -1,0 +1,43 @@
+.searchList{
+    border: 2px solid whitesmoke;
+    width: 400px;
+    list-style-type: "none";
+    padding: 0;
+     margin: 1px;
+}
+.listMain{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    font-weight: 400;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.listMain:hover{
+    background-color: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.divMain{
+    width: 100vw;
+    height: 100vh;
+    background-color:  transparent;
+    position: fixed;
+}
+
+li.active{
+    background:  rgba(0,0,0,0.1);
+}
+
+.inputSearch{
+    width: 400px;
+    height: 15px;
+}
+
+.span{
+    margin-left: 3px;
+    font-size: 0.9em;
+    font-weight: 300;
+}
