@@ -27,9 +27,6 @@
     position: fixed;
 }
 
-li.active{
-    background:  rgba(0,0,0,0.1);
-}
 
 .inputSearch{
     width: 400px;

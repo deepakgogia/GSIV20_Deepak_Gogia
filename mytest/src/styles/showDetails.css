@@ -1,0 +1,28 @@
+.itemShowMainDiv{
+    float: left;
+    margin-left: 50px;
+
+}
+.itemShowImgDiv{
+    display: block;
+    float: left;
+}
+.itemShowImg{
+    display: block;
+    float: left;
+    /* border: 2px solid red; */
+    height: 350px;
+}
+.itemOtherDiv{
+    float: left;
+    padding-Left: 30px;
+    width: 60%;
+    font-weight: 0.6em;
+}
+.extraDiv{
+    height: 10px;
+}
+.itemName{
+    font-Size: 1.9em;
+    font-Weight: 350;
+}

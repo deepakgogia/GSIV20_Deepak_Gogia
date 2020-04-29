@@ -3,13 +3,15 @@ import '../../styles/searchStyle.css';
 import { connect } from 'react-redux';
 import { searchMoviesData, getUpcomingMoviesData } from '../../redux/action';
 import { ShowResults } from './ShowResults';
+import { Home } from './Home';
+
 class Search extends Component {
     state = {
         inputSearch: '',
     }
 
-    async componentDidMount() {
-        await this.props.dispatch(getUpcomingMoviesData());
+    componentDidMount() {
+        this.getData();
     }
 
     txtChange = ({ target: { value } }) => {
@@ -21,11 +23,18 @@ class Search extends Component {
             await this.props.dispatch(searchMoviesData(value));
         }
         else {
-            await this.props.dispatch(getUpcomingMoviesData());
+            this.getData();
         }
         this.setState({ inputSearch: value });
     }
 
+    async getData() {
+        await this.props.dispatch(getUpcomingMoviesData());
+    }
+
+    clickEvent = () => {
+        window.location.reload();
+    }
     render() {
         const { inputSearch } = this.state;
         const { results } = this.props;
@@ -38,6 +47,7 @@ class Search extends Component {
                     placeholder="Search for a movie"
                     className="inputSearch"
                 />
+                <Home clickEvent={this.clickEvent} />
                 {results && <ShowResults data={this.props}></ShowResults>}
             </div>
         </>);

@@ -35,5 +35,5 @@
   padding-left: 50px;
   padding-bottom: 5px;
   border-bottom: 2px solid grey;
-  position: sticky;
+  position: relative;
 }

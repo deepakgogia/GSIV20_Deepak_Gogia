@@ -6,8 +6,8 @@ export const AppRoutes = () => (
     <>
         <BrowserRouter>
             <Switch>
-                <Route path="/:type/:id" component={ShowDetails} />
-                <Route path="/search/" component={Search} />
+                <Route path="/:id" component={ShowDetails} />
+                <Route component={Search} />
             </Switch>
         </BrowserRouter>
     </>
