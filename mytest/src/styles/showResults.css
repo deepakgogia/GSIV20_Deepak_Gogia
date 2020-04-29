@@ -1,0 +1,22 @@
+.movieShowMainDiv{
+    width: 185px;
+    text-overflow: ellipsis;
+    position: relative;
+    height: 350px;
+    margin: 5px;
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+
+.moviePosterImg{
+    display: block;
+    float: left;
+    width: 200px;
+    height: 279px;
+}
+
+
+.movieTitle{
+    margin:0;
+}
